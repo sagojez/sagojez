@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter",
   "private": true,
-  "description": "Gatsby Starter",
+  "description": "Samuel Gómez Portfolio",
   "version": "1.2.0",
-  "author": "Polychronis Papadakis <polychronis.papadakis@gmail.com>",
+  "author": "Samuel Gómez <samgj_18@hotmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/styles": "^4.11.3",
