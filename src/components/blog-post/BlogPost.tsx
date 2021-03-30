@@ -9,14 +9,19 @@ interface Props {
   classes: any;
   data: any;
 };
-console.log("HOLA")
 
 const BlogPost = ({ classes, data }: Props) => (
   <div className={classes.container}>
-    {data.featuredImage ? <Img fluid={data.featuredImage.fluid} /> : null}
-    <Typography variant='h2' color='textPrimary'>
-      {data.title}
-    </Typography>
+    <a
+      href={data.slug}
+      target={'_blank'}
+      rel={'noreferrer'}
+      className={classes.link}>
+        {data.featuredImage ? <Img fluid={data.featuredImage.fluid} /> : null}
+        <Typography variant='h2' color='textPrimary'>
+          {data.title}
+        </Typography>
+    </a>
     <Typography
       variant='body1'
       dangerouslySetInnerHTML={{
