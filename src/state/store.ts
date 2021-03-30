@@ -3,7 +3,7 @@ import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 
 import reducer from './reducer';
 
-const composeEnhancers = composeWithDevTools({ name: 'Gatsby Starter' });
+const composeEnhancers = composeWithDevTools({ name: 'Samuel Gomez Portfolio' });
 
 const store = preloadedState => {
   return createStore(

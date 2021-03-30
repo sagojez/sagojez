@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter`,
-    description: `Gatsby Starter`,
-    author: `Polychronis Papadakis`,
+    title: `Samuel Gómez Portfolio`,
+    description: `Samuel Gómez Portfolio`,
+    author: `Samuel Gómez`,
   },
   plugins: [
     `gatsby-transformer-sharp`,
