@@ -9,6 +9,14 @@ module.exports = {
     author: `Samuel Gómez`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-193354686-1`,
+        head: true,
+        anonymize: true
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
