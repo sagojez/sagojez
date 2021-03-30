@@ -1,89 +1,36 @@
-<p align="center">
-  <img alt="Gatsby" src="https://raw.githubusercontent.com/chronisp/gatsby-starter/master/src/images/website-icon.png" width="60" />
+<h1 align="center">Hi 👋, I'm Samuel</h1>
+<h3 align="center">A passionate Scala and Python developer from Colombia</h3>
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=samgj18&label=Profile%20views&color=0e75b6&style=flat" alt="samgj18" /> </p>
+
+<p align="left"> <a href="https://twitter.com/samgj18" target="blank"><img src="https://img.shields.io/twitter/follow/samgj18?logo=twitter&style=for-the-badge" alt="samgj18" /></a> </p>
+
+- 🔭 I’m currently working on [Torre](https://torre.co/)
+
+- 🌱 I’m currently learning **Machine Learning, Scala & Python**
+
+- 👨‍💻 All of my projects are available at [https://samuelgomez.co/](https://samuelgomez.co/)
+
+- 📝 I regularly write articles on [https://ourspace.tech/](https://ourspace.tech/)
+
+- 💬 Ask me about **React, Scala and Python**
+
+- 📫 How to reach me **info@samuelgomez.co**
+
+- 📄 Know about my experiences [https://drive.google.com/file/d/1jf3QIb59ORx7bBVdKaaPIvrpgWPSH3tU/view](https://drive.google.com/file/d/1jf3QIb59ORx7bBVdKaaPIvrpgWPSH3tU/view)
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/samgj18" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="samgj18" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/samuelgomezjimenez/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="https://www.linkedin.com/in/samuelgomezjimenez/" height="30" width="40" /></a>
+<a href="https://instagram.com/samuelg_18" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="samuelg_18" height="30" width="40" /></a>
 </p>
-<h1 align="center">
-  Gatsby Starter
-</h1>
 
-<p align="center">
-  Gatsby Starter for creating portfolio & blog.
-</p>
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.scala-lang.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scala/scala-original.svg" alt="scala" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
 
-<p align="center">
-  <a href="https://app.netlify.com/sites/gatsby-starter-dot/deploys">
-    <img alt="Netlify" src="https://img.shields.io/netlify/a37c0ad8-deae-4bd3-8c8e-cbac8d2f05c3">
-  </a>
-  <a href="https://www.codacy.com/app/chronisp/gatsby-starter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=chronisp/gatsby-starter&amp;utm_campaign=Badge_Grade">
-    <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/c23975ea23e3459283f6c76ad338fcb1">
-  </a>
-  <a href="https://github.com/chronisp/gatsby-starter/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/chronisp/gatsby-starter"></a>
-</p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=samgj18&show_icons=true&locale=en&layout=compact" alt="samgj18" /></p>
 
-## Key Features
-These are the key features of the project:
-*  [Gatsby](https://www.gatsbyjs.org/) (GraphQL for queries)
-*  [React](https://reactjs.org/) (everything in React Hooks)
-*  [TypeScript](https://www.typescriptlang.org/) (in progress...)
-*  [Redux](https://redux.js.org/) (custom HOF to connect actions & props)
-*  [Material UI](https://material-ui.com/) (palette, typography & breakpoints configuration)
-*  [Contentful CMS](https://www.contentful.com/) (blog integration)
-*  [Netlify Deployment Support](https://www.netlify.com)
-*  [React Helmet](https://github.com/nfl/react-helmet)
-*  [Prettier](https://prettier.io/)
-*  [Gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
-*  Config files for each environment
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=samgj18&" alt="samgj18" /></p>
 
-## Get Started
-Make sure that you have Node.js (>=12.13.0) and yarn v.1 or above installed.
-
-Install Gatsby CLI
-```sh
-npm install -g gatsby-cli
-```
-Clone repository
-```sh
-git clone https://github.com/chronisp/gatsby-starter.git <YOUR_PROJECT_NAME>
-```
-Move to project directory
-```sh
-cd <YOUR_PROJECT_NAME>
-```
-Install all dependencies
-```sh
-yarn install
-```
-
-### Contentful blog
-Setup Contentful settings
-```sh
-yarn setup
-```
-Follow the instructions in order to setup ```CONTENTFUL_SPACE_ID``` and ```CONTENTFUL_ACCESS_TOKEN```. Required settings will be defined in both ```.env.development``` and ```.env.production``` files.
-
-For more info on how to setup Contentful follow this [link](https://www.contentful.com/r/knowledgebase/gatsbyjs-and-contentful-in-five-minutes/).
-
-### Development mode
-Start development server
-```sh
-yarn develop
-```
-Your site is now running at ```http://localhost:8000```.
-
-### Production mode
-Create a production build
-```sh
-yarn build
-```
-Serve the production build locally
-```sh
-yarn serve
-```
-Your site is running at ```http://localhost:9000```.
-
-### Linting
-Format all JS files
-```sh
-yarn format
-```
-
-For any building or deployment issues, ensure you have setup your environment according to [Gatsby guide](https://www.gatsbyjs.org/docs/preparing-your-environment/) for [Windows](https://www.gatsbyjs.org/docs/gatsby-on-windows/) or [Linux](https://www.gatsbyjs.org/docs/gatsby-on-linux/).
+About the setup for this blog [Setup](SETUP.md)
