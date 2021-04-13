@@ -16,7 +16,7 @@ interface Props {
 };
 
 const Modal = ({ classes, children, fullScreen, setOpen, ...rest }: Props) => (
-  <MUIlModal closeAfterTransition {...rest}>
+  <MUIlModal className={classes.noBorder} closeAfterTransition {...rest}>
     <Fade in={rest.open} timeout={250}>
       <div
         className={

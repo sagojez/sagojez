@@ -10,8 +10,13 @@ interface Props {
 };
 
 const Resume = ({ classes }: Props) => (
-  <div >
-    Resume
+  <div className= {classes.container}>
+    <div className={classes.rectangleLarge}>
+      Hello
+    </div>
+    <div className={classes.rectangleSmall}>
+      
+    </div>
   </div>
 );
 
