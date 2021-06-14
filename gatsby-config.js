@@ -1,6 +1,6 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
@@ -9,14 +9,14 @@ module.exports = {
     author: `Samuel Gómez`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `UA-193354686-1`,
-    //     head: true,
-    //     anonymize: true
-    //   }
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-193354686-1`,
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
@@ -32,18 +32,18 @@ module.exports = {
       options: {
         root: './src',
         aliases: {
-          'components': './components',
-          'containers': './containers',
-          'images': './images',
-          'state': './state',
-          'styles': './styles',
-          'utils': './utils',
+          components: './components',
+          containers: './containers',
+          images: './images',
+          state: './state',
+          styles: './styles',
+          utils: './utils',
           static: {
             root: './public',
-            alias: './static'
-          }
-        }
-      }
+            alias: './static',
+          },
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -67,7 +67,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
-        pathToCreateStoreModule: "./src/state/store",
+        pathToCreateStoreModule: './src/state/store',
         serialize: {
           space: 0,
           isJSON: true,
@@ -81,7 +81,7 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         environment: process.env.CONTENTFUL_ENV,
-      }
+      },
     },
   ],
-}
+};
