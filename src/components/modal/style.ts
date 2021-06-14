@@ -15,11 +15,21 @@ const styles = ({ typography }) => ({
     position: 'absolute',
     top: '5%',
     left: '10%',
+    outline: 'none',
   },
   content: {
     backgroundColor: '#fafafa',
     width: '100%',
     height: '100%',
+    // padding: '30px',
+    borderRadius: '10px',
+  },
+  closeBtn: {
+    position: 'absolute',
+    top: '10px',
+    right: '10px',
+    fontSize: '18px',
+    cursor: 'pointer',
   },
 });
 
