@@ -17,7 +17,7 @@
 
 - 📫 How to reach me **info@samuelgomez.co**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1jf3QIb59ORx7bBVdKaaPIvrpgWPSH3tU/view](https://drive.google.com/file/d/1jf3QIb59ORx7bBVdKaaPIvrpgWPSH3tU/view)
+- 📄 Know about my experiences [resumé](https://docs.google.com/document/d/1Iy3Z0xDbx_7ahv9KZZTfCTomkCDBxV4MZcPQfj-ui7s/edit?usp=sharing)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
