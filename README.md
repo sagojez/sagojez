@@ -22,8 +22,8 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/samgj18" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="samgj18" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/samuelgomezjimenez/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="https://www.linkedin.com/in/samuelgomezjimenez/" height="30" width="40" /></a>
-<a href="https://instagram.com/samuelg_18" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="samuelg_18" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/samuelgomezjimenez/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="https://www.linkedin.com/in/samuelgomezjimenez/" height="30" width="40" /></a>
+<a href="https://instagram.com/samgj18" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="samgj18" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
