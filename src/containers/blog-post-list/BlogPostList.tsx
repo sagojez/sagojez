@@ -15,9 +15,9 @@ const BlogPostList = ({ classes }: Props) => {
 
   return (
     <div className={classes.container}>
-      {allContentfulBlogPost.edges.map(({ node }, index) => (
-        <BlogPost key={index} data={node} />
-      ))}
+      {allContentfulBlogPost.edges.map(({ node }, index) => {
+        return (<BlogPost key={index} data={node} />)
+      })}
     </div>
   );
 };

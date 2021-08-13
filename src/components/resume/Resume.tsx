@@ -7,7 +7,7 @@ import {
   experience,
   frameworks,
   languages,
-} from './data';
+} from './content';
 import styles from './style';
 
 interface Props {
