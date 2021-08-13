@@ -81,9 +81,9 @@ const Resume = ({ classes }: Props) => (
         </div>
       </div>
     </div>
-    <div className={classes.secondColumn}>
+    <div>
       <h4 className={classes.sectionHeader}>EXPERIENCE</h4>
-      <div className={classes.secondColumnContainer}>
+      <div>
         {experience.map((item, index) => {
           const { company, date, desc, technologies } = item;
           return (
@@ -91,7 +91,7 @@ const Resume = ({ classes }: Props) => (
               <h5 className={classes.company}>{company}</h5>
               <h6 className={classes.expDate}>{date}</h6>
               {desc.map(detail => (
-                <p className={classes.desc}>{detail}</p>
+                <p key={"id" + detail} className={classes.desc}>{detail}</p>
               ))}
               <p style={{ marginBottom: '0' }} className={classes.desc}>
                 {technologies.length > 0 && `TECHNOLOGIES: ${technologies}`}

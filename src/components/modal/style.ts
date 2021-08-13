@@ -1,4 +1,4 @@
-const styles = ({ typography }) => ({
+const styles = ({  app, breakpoints, typography  }) => ({
   scrollContainer: {
     minHeight: '100%',
   },
@@ -18,11 +18,13 @@ const styles = ({ typography }) => ({
     outline: 'none',
   },
   content: {
-    backgroundColor: '#fafafa',
-    width: '100%',
     height: '100%',
-    // padding: '30px',
     borderRadius: '10px',
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%,-50%)',
+    width: 'inherit'
   },
   closeBtn: {
     position: 'absolute',

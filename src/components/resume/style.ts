@@ -142,13 +142,6 @@ const styles = ({ app, breakpoints, typography }) => ({
     borderRadius: '6px',
     margin: '10px',
   },
-  secondColumn: {},
-  secondColumnContainer: {
-    [breakpoints.up('lg')]: {
-      height: '585px',
-      overflowY: 'auto',
-    },
-  },
   expSection: {
     borderRadius: '6px',
     background: 'rgba(255, 255, 255, 0.1)',
