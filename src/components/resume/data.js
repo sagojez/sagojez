@@ -72,7 +72,7 @@ export const experience = [
   },
   {
     company: 'Software Engineer, SC IT Services (Clean news)',
-    date: 'March 2020 - Dec 2020 (Amsterdam, NE)',
+    date: '2020 - 2021',
     desc: [
       'Developed and maintained a fully scalable backend with NodeJs, AWS Lambda, AWS Cognito, AWS SNS, and React to maximize business value and developers’ ease at coding.',
       'Co-architected and implemented a web scraping application with Golang in order to extract relevant/segmented news from Wikipedia and Google News to serve relevant data to customers based on geographical location.',

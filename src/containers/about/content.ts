@@ -1,4 +1,4 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 
 const content = {
   title: 'About.',
@@ -10,12 +10,12 @@ const content = {
       Icon: FaGithub,
       newTab: true,
     },
-    // {
-    //   to: 'https://github.com/chronisp/gatsby-starter',
-    //   text: 'Gatsby Starter',
-    //   Icon: FaGithub,
-    //   newTab: true,
-    // },
+    {
+      to: 'https://twitter.com/samgj18',
+      text: 'samgj18',
+      Icon: FaTwitter,
+      newTab: true,
+    },
   ],
 };
 
