@@ -45,6 +45,19 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
+        <p>
+          This post doesn't exist yet, send me an email and tell me if I should
+          write it'
+        </p>
+        <iframe
+          title="lost on you"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wDjeBNv6ip0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
         <Link to="/">Go home</Link>.
       </p>
     </main>
