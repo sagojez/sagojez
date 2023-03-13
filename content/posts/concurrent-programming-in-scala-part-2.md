@@ -2,8 +2,6 @@
 title: "Concurrent Programming in Scala - Part 2"
 date: 2023-03-13T06:50:51Z
 draft: false
-series: 
-    - "concurrent programing in scala"
 tags: ["scala", "concurrent"]
 categories: ["programming"]
 cover:
