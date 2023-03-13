@@ -1,0 +1,100 @@
+baseURL = "https://samuelgomez.co/"
+title = "Our Space"
+paginate = 5
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Our Space"
+description = "Our little corner of the internet"
+keywords = [ "Blog", "Portfolio", "PaperMod" ]
+author = "@samgj18"
+images = [ "https://avatars.githubusercontent.com/u/39674930?v=4" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = "icon.png"
+  favicon16x16 = "icon.png"
+  favicon32x32 = "icon.png"
+  apple_touch_icon = "icon.png"
+  safari_pinned_tab = "icon.png"
+
+  [params.label]
+  text = "Home"
+  icon = "icon.png"
+  iconHeight = 35
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "I'm Samuel, a software engineer and this is my little corner of the internet. I write about software development, technology, and other things that interest me."
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/samgj18"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  [params.editPost]
+  URL = "https://github.com/samgj18/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "github"
+name = "Github"
+url = "https://github.com/samgj18"
+weight = 30
+
+[markup.highlight]
+noClasses = false
+
