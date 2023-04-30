@@ -7,19 +7,9 @@ categories: ["programming"]
 cover:
     alt: "Concurrent Programming in Scala - Part 2"
     caption: "Concurrent Programming in Scala - Part 2"
+ShowToc: true
+TocOpen: true
 ---
-
-- **Table of contents**:
-    - [Processes and Threads](#processes-and-threads)
-        - [How does this relate to the JVM?](#how-does-this-relate-to-the-jvm)
-        - [Creating and starting threads](#creating-and-starting-threads)
-        - [Atomic execution](#atomic-execution)
-        - [Monitors and synchronization](#monitors-and-synchronization)
-        - [Deadlocks](#deadlocks)
-        - [Guarded blocks](#guarded-blocks)
-        - [Interrupting threads and the graceful shutdown](#interrupting-threads-and-the-graceful-shutdown)
-    - [Complete overview](#complete-overview)
-    - [Summary](#summary)
 
 ## Processes and Threads
 

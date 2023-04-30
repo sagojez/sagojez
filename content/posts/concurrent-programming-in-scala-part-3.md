@@ -7,14 +7,9 @@ categories: ["programming"]
 cover:
     alt: "Concurrent Programming in Scala - Part 3"
     caption: "Concurrent Programming in Scala - Part 3"
+ShowToc: true
+TocOpen: true
 ---
-
-- **Table of Contents**:
-    - [The Executor and ExecutionContext objects](#the-executor-and-executioncontext-objects)
-    - [Atomic primitives](#atomic-primitives)
-    - [Lock-free programming](#lock-free-programming)
-    - [Lazy values](#lazy-values)
-    - [Summary](#summary)
 
 The concurrency primitives shown in the previous chapters are the basics of concurrent programming on JVM. However, it is recommended to avoid using them directly. They are low-level, hard to work and error-prone.
 

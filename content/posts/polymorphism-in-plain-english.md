@@ -7,13 +7,9 @@ categories: ["programming"]
 cover:
     alt: "Polymorphism in Plain English"
     caption: "Polymorphism in Plain English"
+ShowToc: true
+TocOpen: true
 ---
-
-- [Table of Contents](#table-of-contents)
-  - [Parametric Polymorphism](#parametric-polymorphism)
-  - [Subtype Polymorphism](#subtype-polymorphism)
-  - [Ad-hoc Polymorphism](#ad-hoc-polymorphism)
-  - [Conclusion](#conclusion)
 
 When we hear polymorphism, the first thing that comes to mind is generics. However, polymorphism is a much richer concept than that. In this short post we will be exploring the different types of polymorphism and how we can achieve them in Scala… in plain English.
 
