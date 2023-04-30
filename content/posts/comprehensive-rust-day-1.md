@@ -10,6 +10,7 @@ cover:
 ShowToc: true
 TocOpen: true
 series: ["Comprehensive Rust"]
+serie: ["Comprehensive Rust"]
 ---
 
 ## How to run Rust code locally

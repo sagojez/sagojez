@@ -12,6 +12,11 @@ pygmentsUseClasses = true
 disableXML = true
 minifyOutput = true
 
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
 [params]
 env = "production"
 title = "Our Space"
