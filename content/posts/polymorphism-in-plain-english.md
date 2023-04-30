@@ -1,6 +1,6 @@
 ---
 title: "Polymorphism in Plain English"
-date: 2023-03-10T20:50:51Z
+date: 2023-04-20T20:50:51Z
 draft: false
 tags: ["scala", "polymorphism"]
 categories: ["programming"]
