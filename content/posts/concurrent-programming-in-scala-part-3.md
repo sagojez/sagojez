@@ -1,14 +1,15 @@
 ---
-title: "Concurrent Programming in Scala - Part 3"
+title: "Concurrent Programming in Scala | Part 3"
 date: 2023-04-10T06:50:51Z
 draft: false
 tags: ["scala", "concurrent"]
 categories: ["programming"]
 cover:
-    alt: "Concurrent Programming in Scala - Part 3"
-    caption: "Concurrent Programming in Scala - Part 3"
+    alt: "Concurrent Programming in Scala | Part 3"
+    caption: "Concurrent Programming in Scala | Part 3"
 ShowToc: true
 TocOpen: true
+series: ["Concurrent Programming in Scala"]
 ---
 
 The concurrency primitives shown in the previous chapters are the basics of concurrent programming on JVM. However, it is recommended to avoid using them directly. They are low-level, hard to work and error-prone.

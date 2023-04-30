@@ -7,6 +7,9 @@ categories: ["programming"]
 cover:
     alt: "Comprehensive Rust"
     caption: "Comprehensive Rust"
+ShowToc: true
+TocOpen: true
+series: ["Comprehensive Rust"]
 ---
 
 This is a log of me going through the [Comprehensive Rust](https://google.github.io/comprehensive-rust/running-the-course/course-structure.html)

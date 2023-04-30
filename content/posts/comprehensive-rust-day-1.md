@@ -1,14 +1,15 @@
 ---
-title: "Comprehensive Rust Day 1"
+title: "Comprehensive Rust | Day 1"
 date: 2023-04-28T20:00:00+02:00
 draft: false
 tags: ["rust"]
 categories: ["programming"]
 cover:
-    alt: "Comprehensive Rust Day 1"
-    caption: "Comprehensive Rust Day 1"
+    alt: "Comprehensive Rust | Day 1"
+    caption: "Comprehensive Rust | Day 1"
 ShowToc: true
 TocOpen: true
+series: ["Comprehensive Rust"]
 ---
 
 ## How to run Rust code locally

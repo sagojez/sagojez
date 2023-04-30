@@ -1,14 +1,15 @@
 ---
-title: "Concurrent Programming in Scala - Part 2"
+title: "Concurrent Programming in Scala | Part 2"
 date: 2023-03-13T06:50:51Z
 draft: false
 tags: ["scala", "concurrent"]
 categories: ["programming"]
 cover:
-    alt: "Concurrent Programming in Scala - Part 2"
-    caption: "Concurrent Programming in Scala - Part 2"
+    alt: "Concurrent Programming in Scala | Part 2"
+    caption: "Concurrent Programming in Scala | Part 2"
 ShowToc: true
 TocOpen: true
+series: ["Concurrent Programming in Scala"]
 ---
 
 ## Processes and Threads
