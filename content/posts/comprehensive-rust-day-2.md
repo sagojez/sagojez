@@ -550,8 +550,8 @@ fn left_most<'a, 'b>(p1: &'a Point, p2: &'a Point) -> &'b Point {
 The compiler will rightfully complain about `b` not living long enough, but
 what does it mean?
 
-- Remember that `&'a Point` means that the returned value is valid for at least the lifetime `a`.
-- In this case, the returned value is valid for at least the lifetime `b`.
+- Remember that `&'b Point` means that the returned value is valid for at least the lifetime `b`.
+- The lifetime `a` is the lifetime of the input parameters.
 - The lifetime `b` is not necessarily longer than the lifetime `a`. Is actually unknown.
 
 **Hence the compiler complains that the returned value is not guaranteed to live long enough.**
