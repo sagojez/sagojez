@@ -1,6 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 2"
-date: 2023-04-28T20:00:00+02:00
+date: 2023-04-29T20:25:00+02:00
 draft: false
 tags: ["rust"]
 categories: ["programming"]
