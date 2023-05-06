@@ -8,7 +8,7 @@ cover:
     alt: "Concurrent Programming in Scala | Part 3"
     caption: "Concurrent Programming in Scala | Part 3"
 ShowToc: true
-TocOpen: true
+TocOpen: false
 series: ["Concurrent Programming in Scala"]
 ---
 

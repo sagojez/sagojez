@@ -8,7 +8,7 @@ cover:
     alt: "Comprehensive Rust"
     caption: "Comprehensive Rust"
 ShowToc: true
-TocOpen: true
+TocOpen: false
 series: ["Comprehensive Rust"]
 ---
 

@@ -8,7 +8,7 @@ cover:
     alt: "Concurrent Programming in Scala | Part 2"
     caption: "Concurrent Programming in Scala | Part 2"
 ShowToc: true
-TocOpen: true
+TocOpen: false
 series: ["Concurrent Programming in Scala"]
 ---
 
@@ -44,10 +44,11 @@ On the JVM, thread objects are represented with the Thread class:
 }
 ```
 
-Every thread goes into four different states during its lifetime:
+Every thread goes into five different states during its lifetime:
 
 - **New**: The thread is created but not yet started.
 - **Runnable**: The thread starts executing.
+- **Running**: The thread is executing.
 - **Blocked**: The thread is blocked and cannot execute, for example, waiting on a synchronization lock.
 - **Terminated**: The thread finishes its execution and can't execute anymore.
 
