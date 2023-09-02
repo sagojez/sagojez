@@ -2,13 +2,11 @@
 title: "Comprehensive Rust | Day 3"
 date: 2023-05-02T10:00:00+02:00
 draft: false
-tags: ["rust"]
+tags: ["rust", "programming"]
 categories: ["programming"]
 cover:
     alt: "Comprehensive Rust | Day 3"
     caption: "Comprehensive Rust | Day 3"
-ShowToc: true
-TocOpen: false
 series: ["Comprehensive Rust"]
 ---
 

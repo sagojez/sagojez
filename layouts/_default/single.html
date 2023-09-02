@@ -38,17 +38,19 @@
   <footer class="post-footer">
     {{- if .Params.series }}
 
+    <div class="post-series">
     {{- $name := index .Params.series 0 }}
     <p><a href="" id="series"></a>Part of the <em>{{$name}}</em> series:</p>
     {{- $name := $name | urlize }}
     {{- $series := index .Site.Taxonomies.series $name }}
-    <ol reversed class="series">
+    <ol reversed>
     {{- range $series.Pages }}
       <ul><a href="{{.Permalink}}">{{.LinkTitle}}</a>,&#32;
         {{- .Date.Format .Site.Params.DateFormat -}}
       </ul>
     {{- end }}
     </ol>
+    </div>
 
     {{- end }}
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}

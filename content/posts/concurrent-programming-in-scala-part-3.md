@@ -2,13 +2,11 @@
 title: "Concurrent Programming in Scala | Part 3"
 date: 2023-04-10T06:50:51Z
 draft: false
-tags: ["scala", "concurrent"]
+tags: ["scala", "concurrent", "programming"]
 categories: ["programming"]
 cover:
     alt: "Concurrent Programming in Scala | Part 3"
     caption: "Concurrent Programming in Scala | Part 3"
-ShowToc: true
-TocOpen: false
 series: ["Concurrent Programming in Scala"]
 ---
 

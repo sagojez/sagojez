@@ -1,6 +1,6 @@
 baseURL = "https://samuelgomez.co/"
 title = "Our Space"
-paginate = 5
+paginate = 8
 theme = "PaperMod"
 enableRobotsTXT = true
 buildDrafts = false
@@ -20,27 +20,26 @@ series = "series"
 [params]
 env = "production"
 title = "Our Space"
-description = "Our little corner of the internet"
-keywords = [ "Blog", "Portfolio", "PaperMod" ]
+description = "Our little corner on the internet"
+keywords = [ "Blog", "Portfolio", "samgj18", "Scala", "Rust"]
 author = "@samgj18"
 images = [ "https://avatars.githubusercontent.com/u/39674930?v=4" ]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
 disableThemeToggle = false
 ShowReadingTime = true
-ShowShareButtons = true
+ShowShareButtons = false
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
-ShowCodeCopyButtons = false
+ShowCodeCopyButtons = true
 ShowWordCount = true
-ShowRssButtonInSectionTermList = true
-UseHugoToc = true
+ShowRssButtonInSectionTermList = false
 disableSpecial1stPost = false
 disableScrollToTop = false
 comments = false
 hidemeta = false
 hideSummary = false
-showtoc = false
+showtoc = true
 tocopen = false
 
   [params.assets]
@@ -102,4 +101,3 @@ weight = 30
 
 [markup.highlight]
 noClasses = false
-

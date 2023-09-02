@@ -2,13 +2,11 @@
 title: "Polymorphism in Plain English"
 date: 2023-04-20T20:50:51Z
 draft: false
-tags: ["scala", "polymorphism"]
+tags: ["scala", "polymorphism", "programming"]
 categories: ["programming"]
 cover:
     alt: "Polymorphism in Plain English"
     caption: "Polymorphism in Plain English"
-ShowToc: true
-TocOpen: false
 ---
 
 When we hear polymorphism, the first thing that comes to mind is generics. However, polymorphism is a much richer concept than that. In this short post we will be exploring the different types of polymorphism and how we can achieve them in Scala… in plain English.
