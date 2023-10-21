@@ -44,31 +44,35 @@ Subtype Polymorphism is when we have a base type with a _set_ of different behav
 
 ### Where is it used?
 
-This is heavily used in many libraries. For example, in the [`dolphin`](https://github.com/lapsusHQ/dolphin/blob/main/modules/core/src/main/scala/ProjectionManager.scala) library, we have the trait `ProjectionManager[F[_]]` which defines a set of behaviours that we can use to manage and create projections. We also have it in more common libraries such as `Cats` and `Zio`. Finally, the odds of finding it in your company codebase (if you are using Scala) are very high.
+This is heavily used in many libraries. For example, in [`dolphin`](https://github.com/lapsusHQ/dolphin/blob/main/modules/core/src/main/scala/ProjectionManager.scala) library, we have the trait `ProjectionManager[F[_]]` which defines a set of behaviours that we can use to manage and create projections. We also have it in more common libraries such as `Cats` and `Zio`. Finally, the odds of finding it in your company codebase (if you are using Scala) are very high.
 
 ### How do we achieve it in Scala?
 
 To create a subtype polymorphic function in Scala, we simply need to use the extends syntax. For example,
 
 ```scala
-// Can be replaced with a class
-trait Bar {
-  def bar: String = "bar"
+
+trait Shape {
+  def area: Double
 }
 
-class Foo extends Bar {
-  def foo: String = "foo"
+case class Circle(radius: Double) extends Shape {
+  def area: Double = Math.PI * radius * radius
 }
 
-val foo: Foo = new Foo()
+case class Square(side: Double) extends Shape {
+  def area: Double = side * side
+}
 
-foo.foo // "foo"
-foo.bar // "bar"
+def printArea(shape: Shape): Unit = println(shape.area)
+
+printArea(Circle(1.0)) // 3.141592653589793
+printArea(Square(1.0)) // 1.0
 ```
 
 ## Ad-hoc Polymorphism
 
-Ad-hoc Polymorphism is a different yet super useful beast. Easy to understand and implement  thought as `overloading`.
+Ad-hoc Polymorphism is a different yet super useful beast. It is also known in the Object Oriented world as ✨overloading✨.
 
 ### What is it?
 
