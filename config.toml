@@ -68,7 +68,7 @@ tocopen = false
   hiddenInSingle = true
 
   [params.editPost]
-  URL = "https://github.com/samgj18/content"
+  URL = "https://github.com/samgj18/samgj18/edit/main/content"
   Text = "Suggest Changes"
   appendFilePath = true
 
