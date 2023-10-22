@@ -1,5 +1,7 @@
 ---
 title: "Concurrent Programming in Scala | Part 3"
+summary: "In this chapter, we explored fundamental building blocks for concurrent programs in Scala.
+    We delved into atomic primitives, lock-free programming, and the use of lazy values."
 date: 2023-04-10T06:50:51Z
 draft: false
 tags: ["scala", "concurrent", "programming"]
@@ -14,22 +16,13 @@ The concurrency primitives shown in the previous chapters are the basics of conc
 
 ## The Executor and ExecutionContext objects
 
-We might get the temptation to create new threads because it is lighter than a JVM process. But bear in mind that once the JVM process exists, the thread creation becomes much more expensive than allocating objects, acquiring monitors or updating a collection.
+Instead of creating threads directly, it's often more efficient to utilize a thread pool, a set of threads in a waiting state, ready to take on tasks. This approach significantly reduces the overhead of thread creation.
 
-But why? One reason is that starting a thread requires the OS to allocate a memory region of its call stack. Another reason is that new threads can lead to [context switching](https://en.wikipedia.org/wiki/Context_switch#Cost). 
+The `JDK` offers an abstraction known as the Executor. It encapsulates the execution of concurrent tasks by providing an interface with a single execute method. This method takes a Runnable object, and the Executor manages when to invoke the `Runnable#run` method.
 
-These alone are compelling reasons to adopt, instead, a different approach.  What most concurrent frameworks do is to have a **set of threads** on the waiting state that will take the load as soon as they are available. This is known as a `thread pool`.
+In Scala, the `scala.concurrent` package introduces the `ExecutionContext` trait, which provides similar functionality but tailored for Scala. It encompasses two main methods: `execute`, akin to `Executor#execute`, and `reportFailure`, invoked when a task throws an exception.
 
-The `JDK` comes with an abstraction to encapsulates how to run concurrent tasks called the `Executor`. The `Executor`, under the hood, is merely an interface which defines a single `execute` method. This method takes a `Runnable` object, and the `Executor` decides when to call the `Runnable#run` method.
-
-Up to this point, we've been building abstraction over abstraction. It is a fair question to ask, what's the purpose? Why do I need yet another abstraction called `Executor`?
-
-> The `Executor` serves the purpose of decoupling the _what_ from the _how_ computations are executed.
-
-The `scala.concurrent` package defines the `ExecutionContext` trait that provides the `Executor` functionality but for Scala. This package implements two methods: `execute` that corresponds to the `Executor#execute`. And implements `reportFailure` that takes a Throwable object and is called when a task throws.
-
-The `ExecutionContext` companion object
-contains Scala's default execution context - `global`, which internally uses `ForkJoinPool`:
+The `ExecutionContext` companion object houses Scala's default execution context - `global`, which internally leverages `ForkJoinPool`:
 
 ```scala
 object ExecutionContextGlobal extends App {
@@ -43,12 +36,15 @@ object ExecutionContextGlobal extends App {
 
 ## Atomic primitives
 
-Memory writes don't happen immediately unless synchronisation is applied (properly). _Applying it properly_ can be tricky. Therefore we avoid using them (all the way) and instead opt-in for `Atomic Variables`.
+When it comes to memory writes, ensuring proper synchronization is crucial. However, synchronizing operations can be intricate. To simplify this, we turn to `Atomic Variables`.
 
-`Atomic Variables` are `volatile variables` close relatives, more expensive, but effective at building concurrent operations without relying on the synchronised statement. These variables allow us to express a `complex linearisable operation` (a task that _appears_ to occur instantaneously to the rest of the system and is equivalent to at least two reads or writes). Let's  see them in action:
+Atomic Variables are akin to volatile variables, albeit more robust albeit more expensive. They enable the construction of concurrent operations without relying on synchronized blocks. These variables are adept at handling complex, linearizable operations.
+
+Let's see them in action:
 
 ```scala
 import java.util.concurrent.atomic._
+
 object AtomicUid extends App {
  private val uid = new AtomicLong(0L)
  def getUniqueId(): Long = uid.incrementAndGet()
@@ -99,6 +95,10 @@ Retrying is a common pattern when programming with CAS operations. This retry ca
 
 ## Lock-free programming
 
+Locks, while essential for synchronizing access to shared resources, can sometimes lead to performance overhead. In such cases, Atomic Variables come to the rescue, enabling lock-free operations. These operations ensure that threads do not get blocked indefinitely without locks.
+
+Utilizing atomic variables is a vital step towards achieving lock-freedom, though additional considerations are necessary for a complete implementation.
+
 A lock is a synchronization mechanism used to limit access to a resource that can be used by multiple threads. Instead of using a low-level construct such as locking the object's intrinsic monitor, we can avoid it by using `Atomic Variables`.
 
 > Atomic variables allow us to implement lock-free operations.
@@ -110,10 +110,9 @@ when it gets pre-empted by the OS, therefore it cannot temporarily block other t
 
 ## Lazy values
 
-Lazy values are value declarations that are initialized with their right-hand side expression when the lazy value is read for the first time. Unlike regular values, which are initialized the moment they are created (eager). 
+Lazy values are particularly useful for postponing initialization until the value is first accessed. They contrast with eager values, which are initialized upon creation. This deferred initialization can be crucial for optimizing resource utilization.
 
 > A lazy value is initialized only when a thread accesses it, and it is initialized at most once.
-
 
 ```scala
 object LazyValsCreate extends App {
@@ -130,7 +129,7 @@ object LazyValsCreate extends App {
 ```
 
 
-Lazy values are deeply ingrained in Scala. Singleton objects are implemented as lazy values:
+In Scala, singleton objects are essentially lazy values. They are created only when they are first referenced, offering a form of deferred initialization.
 
 ```scala
 object LazyValsObject extends App {
@@ -141,8 +140,7 @@ object LazyValsObject extends App {
 }
 ```
 
-
-In Scala versions, lazy values and singleton objects are implemented with double-checked locking idiom under the hood:
+Under the hood, Scala implements lazy values and singleton objects with the double-checked locking idiom. This ensures that initialization is thread-safe.
 
 ```scala
  object LazyValsUnderTheHood extends App {
@@ -160,10 +158,9 @@ In Scala versions, lazy values and singleton objects are implemented with double
 }
 ```
 
-> Never invoke blocking operations inside lazy value initialization expressions or singleton object constructors.
+Remember to avoid blocking operations inside lazy value initialization expressions or singleton object constructors.
 
 ## Summary
 
-This chapter talked about the traditional building blocks of concurrent programs in Scala. We learned how to use atomic primitives to atomically switch between different states in the program and implement locks and lock-free algorithms. We studied the implementation of lazy values and their impact on concurrent programs. These insights are not only specific to Scala, but most languages and platforms also have concurrency utilities that are similar to the ones presented in this chapter.
-
-_Please beware that some of the topics of this chapter, such as concurrent collections, were not shown in this summary due to being considered pervasive. However, you can read them [here](https://javarevisited.blogspot.com/2013/02/concurrent-collections-from-jdk-56-java-example-tutorial.html#axzz7yVzdQU9I)._
+In this chapter, we explored fundamental building blocks for concurrent programs in Scala. We delved into atomic primitives,
+lock-free programming, and the use of lazy values. These concepts, while specific to Scala, have parallels in other languages and platforms. It's worth noting that while the pervasive topic of concurrent collections wasn't covered in this summary, you can find more [information here](https://javarevisited.blogspot.com/2013/02/concurrent-collections-from-jdk-56-java-example-tutorial.html#axzz7yVzdQU9I).
