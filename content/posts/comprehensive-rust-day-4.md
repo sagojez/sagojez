@@ -1,5 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 4"
+summary: "In this post we'll cover control flows in Rust such as if, while, for and match"
 date: 2023-05-03T11:00:00+02:00
 draft: false
 tags: ["rust", "programming"]

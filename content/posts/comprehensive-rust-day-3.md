@@ -1,5 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 3"
+summary: "In this post we'll cover Structs, Enums, Pattern Matching and Methods in Rust"
 date: 2023-05-02T10:00:00+02:00
 draft: false
 tags: ["rust", "programming"]

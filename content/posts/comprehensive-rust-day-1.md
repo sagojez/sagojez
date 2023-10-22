@@ -1,5 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 1"
+summary: "In this post we'll cover the basics of Rust such as variables, functions, comments, etc."
 date: 2023-04-28T20:00:00+02:00
 draft: false
 tags: ["rust", "programming"]

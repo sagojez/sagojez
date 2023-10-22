@@ -1,5 +1,6 @@
 ---
 title: "Polymorphism in Plain English"
+summary: "When we hear polymorphism, the first thing that comes to mind is generics. However, polymorphism is a much richer concept than that. In this short post we will be exploring the different types of polymorphism and how we can achieve them in Scala… in plain English."
 date: 2023-04-20T20:50:51Z
 draft: false
 tags: ["scala", "polymorphism", "programming"]
@@ -9,25 +10,25 @@ cover:
     caption: "Polymorphism in Plain English"
 ---
 
-When we hear polymorphism, the first thing that comes to mind is generics. However, polymorphism is a much richer concept than that. In this short post we will be exploring the different types of polymorphism and how we can achieve them in Scala… in plain English.
+Polymorphism is a fundamental concept in programming, allowing us to write code that can work with different data types or structures. When we hear the term "polymorphism," generics often come to mind first. However, polymorphism encompasses a broader range of ideas. In this post, we'll explore the various types of polymorphism and how they can be implemented in Scala, all explained in plain English.
 
 ## Parametric Polymorphism
 
 ### What is Parametric Polymorphism?
 
-Parametric polymorphism can be thought of as good old plain generics. When we talk about Parametric Polymorphism, is using a “parameter” to define the “type” of behaviour we want to achieve with our code.
+Parametric polymorphism, commonly known as generics, involves using a parameter to define the type of behavior we want to achieve with our code.
 
 ### Where is it used?
 
-Parametric Polymorphism is very common in both Object Oriented and Functional Programming. One of the most common examples is when we use a data structure. For example, when we use a `List` in Scala, we can define a data type and the compiler will correctly enforce that we can only use that data type in our `List`.
+This type of polymorphism is prevalent in both Object-Oriented and Functional Programming paradigms. For instance, when working with a List in Scala, we can specify a data type, and the compiler will enforce its usage.
 
 ```scala
 val list: List[Int] = List(1, 2, 3)
 ```
 
-### How do we achieve it in Scala?
+### Implementation in Scala:
 
-To create a parametrically polymorphic function in Scala, we simply need to use the `[]` syntax. For example,
+To create a parametrically polymorphic function in Scala, we use the [] syntax:
 
 ```scala
 // [A] is the type parameter and it can be any type
@@ -36,7 +37,7 @@ def foo[A](a: A): A = a
 
 ## Subtype Polymorphism
 
-Subtype Polymorphism is a super common concept in the Object Oriented world. Where this is known as ✨inheritance✨.
+Subtype Polymorphism, often associated with inheritance, occurs when we extend a base type to create a new type with similar behavior adapted to that specific type.
 
 ### What is it?
 
@@ -44,11 +45,9 @@ Subtype Polymorphism is when we have a base type with a _set_ of different behav
 
 ### Where is it used?
 
-This is heavily used in many libraries. For example, in [`dolphin`](https://github.com/lapsusHQ/dolphin/blob/main/modules/core/src/main/scala/ProjectionManager.scala) library, we have the trait `ProjectionManager[F[_]]` which defines a set of behaviours that we can use to manage and create projections. We also have it in more common libraries such as `Cats` and `Zio`. Finally, the odds of finding it in your company codebase (if you are using Scala) are very high.
+This concept is extensively utilized in libraries such as [dolphin](https://github.com/lapsusHQ/dolphin/blob/main/modules/core/src/main/scala/ProjectionManager.scala), Cats, and Zio. It's also a common practice in Scala codebases.
 
-### How do we achieve it in Scala?
-
-To create a subtype polymorphic function in Scala, we simply need to use the extends syntax. For example,
+### Implementation in Scala:
 
 ```scala
 
@@ -72,19 +71,15 @@ printArea(Square(1.0)) // 1.0
 
 ## Ad-hoc Polymorphism
 
-Ad-hoc Polymorphism is a different yet super useful beast. It is also known in the Object Oriented world as ✨overloading✨.
+Ad-hoc Polymorphism, also known as overloading, occurs when we have a function with the same name but different implementations. For example, a function foo might add two numbers or concatenate two strings.
 
-### What is it?
+### Usage:
 
-Ad-hoc Polymorphism is when we have a function with the same name but different implementation. For example, we can have a function `foo` that adds two numbers or concatenates two strings.
+This form of polymorphism is heavily utilized in the Scala ecosystem. For instance, in the `cats` library, the `Semigroup` trait defines a behavior to combine two values.
 
-### Where is it used?
+### Implementation in Scala:
 
-Ad-hoc polymorphism is heavily used in the Scala ecosystem. For example, in the `cats` library, we have the `Semigroup` trait which defines a behaviour to combine two values.
-
-### How do we achieve it in Scala?
-
-One way to achieve it in Scala is through the use of implicit. The following example shows how we can create an Addable type class that can be used to add two arbitrary values:
+One way to achieve it in Scala is through the use of implicits. Below is an example of creating an Addable type class that can be used to add two arbitrary values:
 
 ```scala
 trait Addable[A] {

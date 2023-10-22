@@ -65,6 +65,10 @@ tocopen = false
   name = "github"
   url = "https://github.com/samgj18"
 
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/samuelgomezjimenez/"
+
   [params.cover]
   hidden = true
   hiddenInList = true
@@ -85,22 +89,28 @@ tocopen = false
   keys = [ "title", "permalink", "summary", "content" ]
 
 [[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 10
+
+[[menu.main]]
 identifier = "categories"
 name = "Categories"
 url = "/categories/"
-weight = 10
+weight = 20
 
 [[menu.main]]
 identifier = "tags"
 name = "Tags"
 url = "/tags/"
-weight = 20
+weight = 30
 
 [[menu.main]]
 identifier = "github"
 name = "Github"
 url = "https://github.com/samgj18"
-weight = 30
+weight = 40
 
 [markup.highlight]
 noClasses = false

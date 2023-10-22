@@ -1,5 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 2"
+summary: "In this post we'll cover ownership, borrowing and lifetimes in Rust"
 date: 2023-04-29T20:25:00+02:00
 draft: false
 tags: ["rust", "programming"]
