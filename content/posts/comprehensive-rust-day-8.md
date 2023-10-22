@@ -51,7 +51,7 @@ they can be.
 
 To answer this one we need to have two concepts crystal clear:
 
-1. What does the `Stack` mean?:
+#### What does the `Stack` mean?:
 
 The `Stack` refers as the `Call Stack`. It is a data structure used
 to manage function calls in a program. When a function is called,
@@ -85,7 +85,7 @@ f2()
 '---------------------------'
 ```
 
-2. What could cause the stack to `unwind` and what does that mean? 
+#### What could cause the stack to `unwind` and what does that mean? 
 
 When an exception occurs the program will start looking for an exception
 handler further up the call stack. This process is called `Stack Unwind`.
