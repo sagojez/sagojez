@@ -25,7 +25,7 @@ env = "production"
 title = "Our Space"
 description = "Our little corner on the internet"
 keywords = [ "Blog", "Portfolio", "samgj18", "Scala", "Rust"]
-author = "@samgj18"
+author = "@sgomezj"
 images = [ "https://avatars.githubusercontent.com/u/39674930?v=4" ]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
