@@ -12,6 +12,9 @@ pygmentsUseClasses = true
 disableXML = true
 minifyOutput = true
 
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
 [taxonomies]
 tag = "tags"
 category = "categories"
