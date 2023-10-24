@@ -1,7 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 8"
-summary: "In this post we'll cover error handling in Rust. We'll also cover
-    the try-operator [`?`] and how it works"
+summary: "Rust error handling through the try-operator [`?`] and how it works"
 date: 2023-10-18T10:00:00+00:00
 draft: false
 tags: ["rust", "programming"]

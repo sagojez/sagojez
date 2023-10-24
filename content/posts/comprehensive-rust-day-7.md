@@ -1,6 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 7"
-summary: "In this post we'll cover important traits in Rust such as Drop, Iterator, IntoIterator.
+summary: "Rust most important traits `Drop`, `Iterator`, `IntoIterator`.
     Also we'll cover Closures and how they work in Rust"
 date: 2023-09-01T11:00:00+02:00
 draft: false

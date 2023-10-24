@@ -1,6 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 9"
-summary: "In this post we'll cover unit tests in Rust"
+summary: "Rust testing, unit, documentation and integration tests"
 date: 2023-10-20T10:00:00+00:00
 draft: false
 tags: ["rust", "programming"]

@@ -1,6 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 6"
-summary: "In this post we'll cover generics and traits in Rust"
+summary: "Generics and traits in Rust"
 date: 2023-07-01T11:00:00+02:00
 draft: false
 tags: ["rust", "programming"]

@@ -1,6 +1,6 @@
 ---
 title: "Comprehensive Rust | Day 5"
-summary: "In this post we'll cover the STD library, modules and how to use them"
+summary: "Rust STD library, modules and how to use them"
 date: 2023-05-05T11:00:00+02:00
 draft: false
 tags: ["rust", "programming"]
