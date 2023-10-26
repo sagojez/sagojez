@@ -1,5 +1,5 @@
 ---
-title: "Comprehensive Rust | Day 11"
+title: "Comprehensive Rust | Final Day"
 summary: "Rust's async story is based on `future's`. A `future` is `poll`ed to produce a value.
     If the value is not ready yet, `poll` returns `Poll::Pending` and the executor will schedule
     the task to be polled again in the future. If the value is ready, `poll` returns `Poll::Ready(value)`."
@@ -295,3 +295,9 @@ async fn main() {
     }
 }
 ```
+
+### Final Thoughts
+
+These were the most important concepts that I learned from the book. I hope you enjoyed it as much as I did.
+Even though I have been dabbling with Rust for a while, I learned a lot of new things and I am looking forward
+to using Rust in my next project.
