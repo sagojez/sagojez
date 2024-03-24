@@ -107,10 +107,16 @@ url = "/tags/"
 weight = 30
 
 [[menu.main]]
+identifier = "resume"
+name = "Resume"
+url = "https://drive.google.com/file/d/1YsOB4vjHxFO4FupYuJhnjNRovAlSi0DZ/view?usp=sharing"
+weight = 40
+
+[[menu.main]]
 identifier = "github"
 name = "Github"
 url = "https://github.com/samgj18"
-weight = 40
+weight = 50
 
 [markup.highlight]
 noClasses = false
