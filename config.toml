@@ -1,5 +1,5 @@
 baseURL = "https://samuelgomez.co/"
-title = "Our Space"
+title = "Samuel G."
 paginate = 8
 theme = "PaperMod"
 enableRobotsTXT = true
@@ -22,10 +22,10 @@ series = "series"
 
 [params]
 env = "production"
-title = "Our Space"
+title = "Samuel G."
 description = "Our little corner on the internet"
-keywords = [ "Blog", "Portfolio", "samgj18", "Scala", "Rust"]
-author = "@sgomezj"
+keywords = [ "Blog", "Portfolio", "sagoez", "Scala", "Rust"]
+author = "@sagoez"
 images = [ "https://avatars.githubusercontent.com/u/39674930?v=4" ]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
@@ -63,11 +63,7 @@ tocopen = false
 
   [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/samgj18"
-
-  [[params.socialIcons]]
-  name = "linkedin"
-  url = "https://www.linkedin.com/in/samuelgomezjimenez/"
+  url = "https://github.com/sagoez"
 
   [params.cover]
   hidden = true
@@ -75,7 +71,7 @@ tocopen = false
   hiddenInSingle = true
 
   [params.editPost]
-  URL = "https://github.com/samgj18/samgj18/edit/main/content"
+  URL = "https://github.com/sagoez/sagoez/edit/main/content"
   Text = "Suggest Changes"
   appendFilePath = true
 
@@ -115,7 +111,7 @@ weight = 40
 [[menu.main]]
 identifier = "github"
 name = "Github"
-url = "https://github.com/samgj18"
+url = "https://github.com/sagoez"
 weight = 50
 
 [markup.highlight]

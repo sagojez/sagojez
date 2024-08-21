@@ -25,7 +25,7 @@ Also [here](https://google.github.io/comprehensive-rust/cargo/rust-ecosystem.htm
 not necessarily correspond to the actual days I spent or the days the course is divided into. I might spend more than one day on a single section or I might spend a day on multiple sections.
 
 I personally use [neovim](https://neovim.io/) as my main editor, so I have all my [configuration in a public repository. This a very sensible and specially crafted configuration
-for my needs](https://github.com/samgj18/.dotfiles), so I don't recommend you to use it as is. However, you can take a look and get some ideas for your own configuration. If you, like me, only find yourself using
+for my needs](https://github.com/sagoez/.dotfiles), so I don't recommend you to use it as is. However, you can take a look and get some ideas for your own configuration. If you, like me, only find yourself using
 Scala and Rust in your daily basis feel free to use it as it is specially crafted for those two languages.
 
 For more general purpose configurations I strongly recommend you to take a look at [neovim kickstarter](https://github.com/nvim-lua/kickstart.nvim).
