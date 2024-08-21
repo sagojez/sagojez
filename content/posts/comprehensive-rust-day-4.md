@@ -102,7 +102,7 @@ fn main() {
         println!("Program name: {value}");
     }
 }
-// Program name: /home/samgj18/.cargo/bin/cargo
+// Program name: /home/sagoez/.cargo/bin/cargo
 ```
 
 ### `For` loops

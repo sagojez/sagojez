@@ -93,4 +93,4 @@ fn test_init() {
 }
 ```
 
-**Note**: For the reader to review if wanted about [`unsafe rust`](https://gist.github.com/samgj18/f2030bd6d53520039637631559b9f8c0).
+**Note**: For the reader to review if wanted about [`unsafe rust`](https://gist.github.com/sagoez/f2030bd6d53520039637631559b9f8c0).
