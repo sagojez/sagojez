@@ -1,5 +1,7 @@
-[ [Virgil](https://github.com/kaizen-solutions/virgil) | [Dotfiles](https://github.com/sagoez/.dotfiles) | [Reach me](mailto:contact@samuelgomez.co?subject=[GitHub]) | [Website](https://sagoez.com) ]
+<p align="center">
+  <a href="https://github.com/kaizen-solutions/virgil" target="_blank">Virgil</a> | <a href="https://github.com/sagoez/.dotfiles" target="_blank">Dotfiles</a> | <a href="mailto:contact@samuelgomez.co?subject=[GitHub]" target="_blank">Reach Me</a> | <a href="https://sagoez.com" target="_blank">Website</a>
+</p>
 
-![Gruvbox](https://github.com/sagoez/sagoez/assets/39674930/b229e119-8a1c-493e-9f9f-1d5470cac35d)
+![5m5kLI9](https://github.com/user-attachments/assets/93faf36d-3a8c-42da-a02d-32fea1f19358)
 
 Credit: [Wallpapers for gruvbox](https://gruvbox-wallpapers.pages.dev/minimalistic)
