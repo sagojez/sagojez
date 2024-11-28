@@ -1,4 +1,4 @@
-baseURL = "https://samuelgomez.co/"
+baseURL = "https://sagoez.co/"
 title = "Samuel G."
 paginate = 8
 theme = "PaperMod"
@@ -25,7 +25,7 @@ env = "production"
 title = "Samuel G."
 description = "Our little corner on the internet"
 keywords = [ "Blog", "Portfolio", "sagoez", "Scala", "Rust"]
-author = "@sagoez"
+author = "@sagojez"
 images = [ "https://avatars.githubusercontent.com/u/39674930?v=4" ]
 DateFormat = "January 2, 2006"
 defaultTheme = "auto"
@@ -63,7 +63,7 @@ tocopen = false
 
   [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/sagoez"
+  url = "https://github.com/sagojez"
 
   [params.cover]
   hidden = true
@@ -71,7 +71,7 @@ tocopen = false
   hiddenInSingle = true
 
   [params.editPost]
-  URL = "https://github.com/sagoez/sagoez/edit/main/content"
+  URL = "https://github.com/sagojez/sagojez/edit/main/content"
   Text = "Suggest Changes"
   appendFilePath = true
 
@@ -111,7 +111,7 @@ weight = 40
 [[menu.main]]
 identifier = "github"
 name = "Github"
-url = "https://github.com/sagoez"
+url = "https://github.com/sagojez"
 weight = 50
 
 [markup.highlight]
