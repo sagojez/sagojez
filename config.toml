@@ -1,5 +1,5 @@
-baseURL = "https://sagoez.co/"
-title = "Samuel G."
+baseURL = "https://sagoez.com/"
+title = "Sam 👋"
 paginate = 8
 theme = "PaperMod"
 enableRobotsTXT = true
